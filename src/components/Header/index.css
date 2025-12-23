@@ -1,0 +1,241 @@
+/* =========================================
+   NAVBAR CONTAINER (DESKTOP)
+========================================= */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #040306;
+
+  height: 100vh;
+  width: 98px;
+
+  flex-direction: column;
+}
+
+/* =========================================
+   LOGO & TITLE
+========================================= */
+
+.nav-icon {
+  width: 82px;
+  height: 33px;
+}
+
+.title {
+  text-decoration: none;
+  color: #ffffff;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0.5;
+
+  margin-top: 0px;
+}
+
+.logo-container-title {
+  line-height: 0.2;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+/* =========================================
+   LOGOUT BUTTON (DESKTOP)
+========================================= */
+
+.logout-button {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+
+  width: 37px;
+  height: 56px;
+
+  color: #9b9b9b;
+  line-height: 0.5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+
+/* =========================================
+   MOBILE MENU TRIGGER
+========================================= */
+
+.trigger-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  transition: transform 0.2s ease;
+
+  display: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.trigger-button:hover {
+  transform: scale(1.1);
+}
+
+/* =========================================
+   POPUP CONTAINER & CONTENT
+========================================= */
+
+.popup-container {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.popup-content {
+  background-color: transparent;
+  width: 105px !important;
+
+  display: none;
+  opacity: 100%;
+
+  padding: 0px;
+  margin: 0px;
+
+  transform: translateX(0) !important;
+}
+
+/* =========================================
+   MENU ITEMS LIST
+========================================= */
+
+.manu-item-container {
+  display: none;
+  flex-direction: column;
+
+  background-color: #181818;
+
+  color: #ffffff;
+  font-family: 'Roboto';
+
+  position: relative;
+  border-radius: 5px;
+}
+
+/* Duplicate selector preserved exactly */
+.manu-item-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: none;
+  flex-direction: column;
+}
+
+/* =========================================
+   MENU ITEM STYLES
+========================================= */
+
+.manu-item-container li {
+  color: #b3b3b3;
+  padding: 12px 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.manu-item-container li:hover {
+  color: #ffffff;
+  background-color: #282828;
+}
+
+.manu-item-container li:last-child {
+  border-top: 1px solid #333;
+  margin-top: 5px;
+  color: #ff4d4d;
+}
+
+.manu-item-container li:last-child:hover {
+  background-color: rgba(255, 77, 77, 0.1);
+}
+
+/* =========================================
+   MENU LOGOUT BUTTON
+========================================= */
+
+.menu-logout-button {
+  background-color: transparent;
+  border: 0px;
+  color: #ff4d4d;
+  cursor: pointer;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* UL container */
+ul.manu-item-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  z-index: 1000;
+}
+
+/* LI items */
+ul.manu-item-container > li {
+  display: block;
+  width: 100%;
+}
+
+/* =========================================
+   MOBILE VIEW (MAX WIDTH 600PX)
+========================================= */
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: row;
+
+    width: 100vw;
+    height: 8vh;
+
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .manu-item-container {
+    display: flex;
+  }
+
+  .logout-button {
+    display: none;
+  }
+
+  .trigger-button {
+    display: flex;
+  }
+
+  .popup-content {
+    display: flex;
+  }
+
+  .popup-container {
+    display: flex;
+  }
+}

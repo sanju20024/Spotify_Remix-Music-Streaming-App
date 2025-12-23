@@ -1,0 +1,178 @@
+/* =========================================
+   LOGIN PAGE BACKGROUND
+========================================= */
+
+.login-bg-container {
+  background-image: url('https://res.cloudinary.com/dvf7rhe2l/image/upload/v1766233675/Group_138_1_bzdz1t.png');
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================
+   LOGIN FORM CONTAINER
+========================================= */
+
+.login-form-container {
+  height: 45%;
+  width: 90%;
+  background-color: rgba(24, 24, 24, 0.9);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+/* =========================================
+   LOGIN LOGO SECTION
+========================================= */
+
+.login-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 0.5;
+  font-size: 70%;
+  font-weight: 700;
+  height: 44px;
+  width: 196px;
+}
+
+/* =========================================
+   FORM DETAILS WRAPPER
+========================================= */
+
+.login-form-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 7%;
+  width: 80%;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.login-inputs {
+  padding: 7px;
+  outline: none;
+  border-radius: 3px;
+  border: 0px;
+  font-family: 'Roboto';
+}
+
+/* =========================================
+   LABEL + INPUT GROUP
+========================================= */
+
+.login-labels-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+  padding: 8px;
+  border: 0px;
+  font-family: 'Roboto';
+  background-color: #1db954;
+  border-radius: 8px;
+  color: #ffffff;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: center;
+  width: 100px;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.errorMsg {
+  color: red;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0px;
+  align-self: center;
+}
+
+/* =========================================
+   SHOW PASSWORD OPTION
+========================================= */
+
+.show-password-container {
+  font-family: 'Roboto';
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.showPassword-label {
+  cursor: pointer;
+  margin-left: 1.5%;
+}
+
+/* =========================================
+   LOADING SCREEN
+========================================= */
+
+.loading-container {
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+.loading-text {
+  text-align: center;
+}
+
+/* =========================================
+   DESKTOP VIEW (MIN WIDTH 600PX)
+========================================= */
+
+@media (min-width: 600px) {
+  .login-bg-container {
+    background-image: url('https://res.cloudinary.com/dvf7rhe2l/image/upload/v1766233093/Group_138_smicoc.png');
+  }
+
+  .login-form-container {
+    max-height: 433px;
+    min-height: 400px;
+    min-width: 400px;
+    max-width: 456px;
+  }
+
+  .login-button {
+    width: auto;
+    align-self: stretch;
+  }
+
+  .errorMsg {
+    width: auto;
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,113 @@
+/* ===============================
+   TABLE HEADER (ALBUM TRACK LIST)
+================================ */
+.table-header-album {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 0.7fr;
+
+  padding: 5px 5px;
+  padding-left: 6%;
+
+  margin-top: 5px;
+
+  border-bottom: 1px solid #475569;
+
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+/* ===============================
+   POPULARITY BAR CONTAINER
+================================ */
+.popularity {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+/* ===============================
+   POPULARITY BAR (DEFAULT / INACTIVE)
+================================ */
+.popularity span {
+  width: 3px;
+  border-radius: 2px;
+  background-color: #b3b3b3; /* inactive */
+}
+
+/* ===============================
+   POPULARITY BAR HEIGHTS
+================================ */
+.popularity span:nth-child(1) {
+  height: 6px;
+}
+
+.popularity span:nth-child(2) {
+  height: 9px;
+}
+
+.popularity span:nth-child(3) {
+  height: 12px;
+}
+
+.popularity span:nth-child(4) {
+  height: 15px;
+}
+
+.popularity span:nth-child(5) {
+  height: 18px;
+}
+
+/* ===============================
+   ACTIVE POPULARITY BARS
+================================ */
+.popularity span.active {
+  background-color: #1db954; /* Spotify green */
+}
+
+/* ===============================
+   TABLE ROW (ALBUM TRACK)
+================================ */
+.table-row-album {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 0.7fr;
+
+  padding-left: 6%;
+  cursor: pointer;
+}
+
+/* ===============================
+   TABLE ROW HOVER EFFECT
+================================ */
+.table-row-album:hover {
+  background-color: #303030;
+}
+
+/* ===============================
+   ERROR MESSAGE
+================================ */
+.error-msg {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .popularity {
+    display: none;
+  }
+  .table-header-album {
+    display: none;
+  }
+  .table-row-album {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+  }
+  .mobile-track-view {
+    display: none;
+  }
+}

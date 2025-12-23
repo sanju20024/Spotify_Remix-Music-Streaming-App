@@ -1,0 +1,229 @@
+/* =========================================
+   HOME PAGE BASE LAYOUT
+========================================= */
+
+.home-bg-container {
+  display: flex;
+  background: #181818;
+}
+
+/* =========================================
+   HOME CONTENT WRAPPER
+========================================= */
+
+.home-container {
+  width: 90vw;
+}
+
+/* =========================================
+   PLAYLIST SECTIONS SPACING
+========================================= */
+
+.play-lists-container {
+  margin-bottom: 10%;
+}
+
+.head {
+  display: none;
+}
+
+.slide {
+  display: flex;
+}
+
+/* =========================================
+   MOBILE VIEW (MAX WIDTH 600PX)
+========================================= */
+
+@media (max-width: 600px) {
+  .home-bg-container {
+    flex-direction: column;
+  }
+
+  .head {
+    display: flex;
+  }
+
+  .slide {
+    display: none;
+  }
+}
+
+/* =========================================
+   FEATURED PLAYLIST CONTAINER
+========================================= */
+
+.featured-playlist-container {
+  width: 100%;
+  color: #ffffff;
+  background-color: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  font-family: 'Roboto';
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.playlist-heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 24px;
+
+  margin-left: 5%;
+}
+
+/* =========================================
+   PLAYLIST ITEM
+========================================= */
+
+.featured-playlist-items {
+  list-style: none;
+
+  margin: 25px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+
+  width: 180px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================================
+   PLAYLIST IMAGE
+========================================= */
+
+.featured-playlist-images {
+  max-width: 166px;
+  max-height: 166px;
+
+  border-radius: 5px;
+}
+
+/* =========================================
+   PLAYLIST NAME
+========================================= */
+
+.featured-playlist-name {
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+/* =========================================
+   BACKGROUND WRAPPER
+========================================= */
+
+.featured-playlist-bg-container {
+  width: 100%;
+  padding: 0px;
+}
+
+/* =========================================
+   ERROR STATES
+========================================= */
+
+.error-bg-title {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 24px;
+}
+
+.feature-error-bg-container {
+  margin-left: 5%;
+}
+
+.error-info-bg {
+  background-color: #040306;
+
+  height: 50vh;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  color: #ffffff;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+.try-again-btn {
+  padding: 10px;
+  width: 100px;
+
+  border: 0px;
+  border-radius: 4px;
+
+  background-color: #ffffff;
+  color: #171f46;
+
+  font-family: 'HK Grotesk';
+  font-weight: 600;
+  font-style: SemiBold;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   LINK RESET
+========================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+/* =========================================
+   MOBILE VIEW (MAX WIDTH 600PX)
+========================================= */
+
+@media (max-width: 600px) {
+  .featured-playlist-images {
+    max-width: 82px;
+    max-height: 82px;
+  }
+
+  .featured-playlist-items {
+    max-width: 82px;
+
+    margin: 35px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px !important;
+
+    padding: 0px;
+    padding-left: 18px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    align-items: center;
+  }
+
+  .featured-playlist-name {
+    font-size: 12px;
+  }
+
+  .featured-playlist-bg-container {
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featured-playlist-container {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,98 @@
+/* =======================================
+   CATEGORY PLAYLIST ITEM (DESKTOP)
+======================================= */
+.featured-playlist-items-category {
+  margin: 20px;
+  list-style: none;
+  line-height: 1.2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  max-width: 170px;
+}
+
+/* =======================================
+   CATEGORY PLAYLIST NAME
+======================================= */
+.featured-playlist-name-category {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* =======================================
+   TRACK COUNT TEXT
+======================================= */
+.tracks {
+  color: #64748b;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* =======================================
+   CATEGORY HEADING
+======================================= */
+.category-heading {
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-left: 5%;
+  margin-bottom: 5px;
+}
+
+/* =======================================
+   CATEGORY LINK WRAPPER
+======================================= */
+.link-album {
+  width: 100%;
+}
+
+/* =======================================
+   ERROR CONTAINER (FULL VIEW)
+======================================= */
+.error-info-bg-full {
+  background-color: #040306;
+
+  height: 80%;
+  width: 90%;
+  margin-top: 2%;
+  margin-left: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+}
+
+/* =======================================
+   MOBILE VIEW
+======================================= */
+@media (max-width: 600px) {
+  .featured-playlist-items-category {
+    flex-direction: row;
+    padding-left: 5%;
+
+    align-items: center;
+    text-align: left;
+    align-self: center;
+
+    line-height: 1;
+    min-width: 100%;
+    gap: 10%;
+  }
+
+  .featured-playlist-name-category {
+    font-size: 16px;
+  }
+
+  .tracks {
+    font-size: 14px;
+  }
+}
